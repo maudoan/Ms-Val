@@ -1,0 +1,162 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+   }
+body {
+    background-image: url("img/hinh-anh-anime-tinh-yeu6-1024x576.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.love{
+    display: flex;
+    position: relative;
+    height: auto;
+    top: 15rem;
+}
+.love img{
+    bottom: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: 20rem;
+    border-radius: 5%;
+    justify-content: center;
+}
+#btnYes{
+    position:absolute;
+    height: 2rem;
+    width: 5rem;
+    top: 25rem;
+    left: 40rem;
+    border-radius: 50%;
+    border:2px solid red;
+    cursor: pointer;
+
+}
+#btnNo{
+    height: 2rem;
+    width: 5rem;
+    position: absolute;
+    left: 50rem;
+    top: 25rem;
+    border-radius: 50%;
+    border:2px solid red;
+    cursor: pointer;
+
+}
+p{
+    position: absolute;
+    left: 40.5rem;
+    top: 6rem;
+    font-style: italic;
+    font-size: 30px;
+    text-align: center;
+    color: rgba(255,0,0,0.9);
+}
+.box {
+	width: 300px;
+	position: absolute;
+	top: 75%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: column;
+}
+
+.heart {
+	position: relative;
+	margin: auto;
+	height: 170px;
+	width: 200px;
+	animation: animate 1s infinite;
+}
+
+.heart:before, .heart:after {
+	content: '';
+	position: absolute;
+	background: #d63031;
+	width: 100px;
+	height: 160px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+}
+
+.heart:before {
+	left: 100px;
+	transform: rotate(-45deg);
+	transform-origin: 0 100%;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+							0 10px 10px rgba(0,0,0,0.22);
+}
+
+.heart:after {
+	left: 0;
+	transform: rotate(45deg);
+	transform-origin: 100% 100%;
+}
+
+@keyframes animate {
+	0% {
+		transform: scale(1);
+	}
+	30% {
+		transform: scale(.8);
+	}
+	60% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+  @media only screen and (max-width: 1000px) {
+    body {
+      background-color: pink;
+      background-image: url("img/hinh-anh-anime-tinh-yeu6-1024x576.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .love img{
+        bottom: 4rem;
+        margin-left: auto;
+        margin-right: auto;
+        height: 10rem;
+        border-radius: 5%;
+        justify-content: center;
+    }
+    #btnYes{
+        position:absolute;
+        height: 2rem;
+        width: 5rem;
+        top: 9rem;
+        left: 4rem;
+        border-radius: 50%;
+        border:2px solid red;
+        cursor: pointer;
+
+    }
+    #btnNo{
+        height: 2rem;
+        width: 5rem;
+        position: absolute;
+        left: 15rem;
+        top: 9rem;
+        border-radius: 50%;
+        border:2px solid red;
+        cursor: pointer;
+    
+    }
+    p{
+        position: absolute;
+        left: 4.5rem;
+        top: -10rem;
+        font-style: italic;
+        font-size: 30px;
+        text-align: center;
+        color: rgba(255,0,0,0.9);
+    }
+    
+  }
+  

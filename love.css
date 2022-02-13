@@ -1,0 +1,12 @@
+body {
+    background-image: url("img/anh-wallpaper-tinh-yeu-lang-man-nhat_025631767.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media only screen and (max-width: 800px) {
+    body {
+      background-color: pink;
+      height: auto;
+    }
+
+}
