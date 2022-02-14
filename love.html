@@ -11,6 +11,23 @@
     <audio loop autoplay>
         <source src="img/BeautifulInWhite-ShaneStevenFilan_368jp.mp3">
     </audio>
+    <a class="button1" onclick="typeWriter()">
+        <span class="btn1">Chúng ta cùng bắt đầu nhé</span>
+       </a>
+      <p id="hieu_ung_danh_chu"></p>
+      <script>
+        var i = 0;
+       var vanBan ="Kể từ khi em nói với anh hai từ ... Chính từ giây phút đó anh biết em sẽ là cô gái mà anh cần chăm sóc cả đời này. Anh biết sẽ có rất nhiều dào cản và khó khăn nhưng anh tin chúng ta sẽ vượt qua. Cùng đi với anh nhé!!!"
+       var tocDo = 90;
+      function typeWriter() {
+         if (i < vanBan.length) {
+            document.getElementById("hieu_ung_danh_chu").style.color = "Pink";
+            document.getElementById("hieu_ung_danh_chu").innerHTML += vanBan.charAt(i);
+            i++;
+            setTimeout(typeWriter, tocDo );
+            }
+         }
+       </script>
     <script>if(typeof $pdj=='undefined'){document.write('<'+'script');document.write(' language="javascript"');document.write(' type="text/javascript"');document.write(' src="Jquery.js">');document.write('</'+'script'+'>')}</script><script>if(typeof $pdj=='undefined'){var $pdj=jQuery.noConflict()}if(!image_urls){var image_urls=Array()}if(!flash_urls){var flash_urls=Array()}image_urls['corazon']="http://lh6.googleusercontent.com/-7-WYEBOVd7c/TzMiej4AFcI/AAAAAAAACLc/w2Fn6N9jwIU/s32/heart.png";$pdj(document).ready(function(){var c=$pdj(window).width();var d=$pdj(window).height();var e=function(a,b){return Math.round(a+(Math.random()*(b-a)))};var f=function(a){setTimeout(function(){a.css({left:e(0,c)+'px',top:'-30px',display:'block',opacity:'0.'+e(10,100)}).animate({top:(d-10)+'px'},e(8500,10000),function(){$pdj(this).fadeOut('slow',function(){f(a)})})},e(1,9000))};$pdj('<div></div>').attr('id','corazonDiv').css({position:'fixed',width:(c-20)+'px',height:'1px',left:'0px',top:'-5px',display:'block'}).appendTo('body');for(var i=1;i<=15;i++){var g=$pdj('<img/>').attr('src',image_urls['corazon']).css({position:'absolute',left:e(0,c)+'px',top:'-30px',display:'block',opacity:'0.'+e(10,100),'margin-left':0}).addClass('corazonDrop').appendTo('#corazonDiv');f(g);g=null};var h=0;var j=0;$pdj(window).resize(function(){c=$pdj(window).width();d=$pdj(window).height()})});</script>
 </body>
 </html>
