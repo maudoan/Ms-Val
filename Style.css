@@ -8,27 +8,28 @@ body {
     background-image: url("img/hinh-anh-anime-tinh-yeu6-1024x576.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 .love{
-    display: flex;
     position: relative;
-    height: auto;
-    top: 15rem;
+    width: 100%;
+    max-height: 100%;
+    text-align: center;
+    justify-items: center;
 }
-.love img{
-    bottom: 50rem;
-    margin-left: auto;
-    margin-right: auto;
-    height: 20rem;
-    border-radius: 5%;
-    justify-content: center;
+.Love-img span{
+    margin-top: 20px;
+    color: #d63031;
 }
+.Love-img img{
+    max-width: 100%;
+    border: 0;
+    
+}
+
 #btnYes{
-    position:absolute;
     height: 2rem;
     width: 5rem;
-    top: 25rem;
-    left: 40rem;
     border-radius: 50%;
     border:2px solid red;
     cursor: pointer;
@@ -37,23 +38,15 @@ body {
 #btnNo{
     height: 2rem;
     width: 5rem;
-    position: absolute;
-    left: 50rem;
-    top: 25rem;
     border-radius: 50%;
     border:2px solid red;
     cursor: pointer;
 
 }
-p{
-    position: absolute;
-    left: 40.5rem;
-    top: 6rem;
-    font-style: italic;
-    font-size: 30px;
-    text-align: center;
-    color: rgba(255,0,0,0.9);
-}
+
+
+
+
 .box {
 	width: 300px;
 	position: absolute;
@@ -111,52 +104,8 @@ p{
 	}
 }
 
-  @media only screen and (max-width: 1000px) {
-    body {
-      background-color: pink;
-      background-image: url("img/hinh-anh-anime-tinh-yeu6-1024x576.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
+@media (min-width: 1113px) {
+    .box {
+        margin-top: 80px;
     }
-    .love img{
-        bottom: 4rem;
-        margin-left: auto;
-        margin-right: auto;
-        height: 10rem;
-        border-radius: 5%;
-        justify-content: center;
-    }
-    #btnYes{
-        position:absolute;
-        height: 2rem;
-        width: 5rem;
-        top: 9rem;
-        left: 4rem;
-        border-radius: 50%;
-        border:2px solid red;
-        cursor: pointer;
-
-    }
-    #btnNo{
-        height: 2rem;
-        width: 5rem;
-        position: absolute;
-        left: 15rem;
-        top: 9rem;
-        border-radius: 50%;
-        border:2px solid red;
-        cursor: pointer;
-    
-    }
-    p{
-        position: absolute;
-        left: 4.5rem;
-        top: -10rem;
-        font-style: italic;
-        font-size: 30px;
-        text-align: center;
-        color: rgba(255,0,0,0.9);
-    }
-    
-  }
-  
+}
