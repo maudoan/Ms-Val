@@ -24,7 +24,7 @@ body {
 .Love-img img{
     max-width: 100%;
     border: 0;
-    
+	border-radius: 50%;
 }
 
 #btnYes{
