@@ -44,7 +44,9 @@ body {
 
 }
 
-
+.box1 input:hover{
+	background-color: rgba(231, 60, 60, 0.9);
+}
 
 
 .box {
